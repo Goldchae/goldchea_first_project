@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>람쥐놀이</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+  var gStudy = 0;
+  var gDessert = 0;
+  var gPicture =0;
+  var gSkate =0;
+  var gPlay =0;
+  
+function fStudy() {
+  gStudy = gStudy+20;
+  document.getElementById('study').value = gStudy;
+  if (gStudy==100)
+  {
+      if (confirm("당신의 완성된 람지") == true){    
+        location.href ="3.html";
+      }else{   //취소
+        return;
+      }
+  } 
+}
+  
+function fDessert() {
+  gDessert = gDessert+20;
+  document.getElementById('dessert').value = gDessert;
+  if (gDessert==100)
+  {
+      if (confirm("당신의 완성된 람지") == true){    
+        location.href ="2.html";
+      }else{   //취소
+        return;
+      }
+  }
+}
+
+function fPicture() {
+  gPicture = gPicture+20;
+  document.getElementById('picture').value = gPicture;
+  if (gPicture==100)
+  {
+      if (confirm("당신의 완성된 람지") == true){    
+        location.href ="2.html";
+      }else{   //취소
+        return;
+      }
+  }
+}
+
+function fSkate() {
+  gSkate = gSkate+20;
+  document.getElementById('skate').value = gSkate;
+  if (gSkate==100)
+  {
+      if (confirm("당신의 완성된 람지") == true){    
+        location.href ="2.html";
+      }else{   //취소
+        return;
+      }
+  }
+}
+
+function fPlay() {
+  gPlay = gPlay+20;
+  document.getElementById('play').value = gPlay;
+  if (gPlay==100)
+  {
+      if (confirm("당신의 완성된 람지") == true){    
+        location.href ="2.html";
+      }else{   //취소
+        return;
+      }
+  }
+}
+
+
+</script>
+</head>
+
+  
+<body>
+  <h>지능</h>
+  <div>
+    <progress value="0" max="100" id="study"></progress>
+  </div>
+  <button><span onclick="fStudy();link();">공부하기</span></button>
+  <br><br>
+  <h>요리실력</h>
+  <div>
+    <progress value="0" max="100" id="dessert"></progress>
+  </div>
+  <button><span onclick="fDessert();">디저트만들기</span></button>
+  <br><br>
+  <h>그림실력</h>
+  <div>
+  	<progress value="0" max="100" id="picture"></progress>
+  </div>
+  <button><span onclick="fPicture();">그림그리기</span></button>
+  <br><br>
+  <h>체력</h>
+  <div>
+    <progress value="0" max="100" id="skate"></progress>
+  </div>
+  <button><span onclick="fSkate();">스케이트보드타기</span></button>
+  <br><br>
+  <h>행복도</h>
+  <div>
+    <progress value="0" max="100" id="play"></progress>
+  </div>
+  <button ><span onclick="fPlay();">놀기</span></button>
+  
+  <img src="./image/game2.gif" height=500px width=700px/>
+
+
+   
+</body>
+</html>
